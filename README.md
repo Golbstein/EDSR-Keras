@@ -16,4 +16,3 @@ Keras implementation of the paper **"Enhanced Deep Residual Networks for Single 
 * Python 3.6
 * Keras>2.0.x
 * keras-tqdm (pip install keras-tqdm)
-
