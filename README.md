@@ -10,6 +10,8 @@ Keras implementation of the paper **"Enhanced Deep Residual Networks for Single 
 4. ICNR weights initialization - [Checkerboard artifact free sub pixel convolution initialization](https://arxiv.org/pdf/1707.02937.pdf), credit also for @kostyaev for the implementation of the initializer here: https://github.com/kostyaev/ICNR
 
 
+**Training from scratch in float16 with multi-loss doesn't work. Set to float32**
+
 ## Dependencies
 * Python 3.6
 * Keras>2.0.x
