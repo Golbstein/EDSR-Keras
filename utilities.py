@@ -69,33 +69,6 @@ def flip(x, flipMode):
     return x
 
 
-# Load data to RAM (for training model using .fit method)
-def load_train_data(IMAGES, N = np.inf, img_size = 96, scale = 2):
-    '''
-    N = number of images to return, 
-    if M is the number of images in the folder and N>M then:
-        return all the images in the folder
-    '''
-    x = []
-    y = []
-    for k, img in tqdm(enumerate(IMAGES)):
-        if k>N: break
-        I = cv2.imread(img)
-        I = random_crop(I, (img_size,img_size))
-        y.append(I.copy())
-        
-        # Use different downsampling methods
-        if np.random.randint(2): # x_scale sampling
-            I = I[::scale, ::scale]
-        else: #bilinear resizing
-            I = cv2.resize(I, (img_size//scale, img_size//scale))
-        x.append(I)
-        
-    x = np.stack(x)
-    y = np.stack(y)
-    return x, y # return HighRes and LowRes images
-
-
 #works with channels last
 class ImageLoader(Sequence):
     
