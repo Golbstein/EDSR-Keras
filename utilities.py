@@ -4,6 +4,7 @@ import keras
 from keras import backend as K
 import tensorflow as tf
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def random_crop(image, crop_shape):
