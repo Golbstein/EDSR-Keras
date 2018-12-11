@@ -3,6 +3,11 @@ EDSR Super-Resolution Implementation with Keras
 
 Keras implementation of the paper **"Enhanced Deep Residual Networks for Single Image Super-Resolution" from CVPRW 2017, 2nd NTIRE**: [EDSR Paper](https://arxiv.org/abs/1707.02921)
 
+![alt text](https://github.com/Golbstein/EDSR-Keras/blob/master/main.png)
+
+# Model Architecture
+![alt text](https://github.com/Golbstein/EDSR-Keras/blob/master/EDSR.png)
+
 ## Extensions
 1. Training with multi loss - MAE + **VGG16 Perceptual Loss** 
 2. float16 and float32 support
