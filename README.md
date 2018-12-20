@@ -21,3 +21,13 @@ Keras implementation of the paper **"Enhanced Deep Residual Networks for Single 
 * Python 3.6
 * Keras>2.0.x
 * keras-tqdm (pip install keras-tqdm)
+
+## Results of multi-loss
+
+* Dataset: Pascal VOC 2012
+* n_feats = 64
+* n_resblocks = 8
+
+![alt text](https://github.com/Golbstein/EDSR-Keras/blob/master/cat.png)
+
+![alt text](https://github.com/Golbstein/EDSR-Keras/blob/master/bird.png)
